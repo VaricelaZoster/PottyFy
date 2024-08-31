@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        
+        </style>
+</head>
+<body>
+        <span id="spanning" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div id = "container">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
+            <a href="#">Track Features</a>
+        </div>
+        
+        <div id = "cont">
+            <div id = "enter">
+                <input id = "input" minlength="1" placeholder="Enter Artist">
+                <button id = "submit">Submit</button><br>
+            </div>
+            <div id = "something">
+                <a id = "link" href = "" target="_blank"></a>
+            </div>
+            <div id="followers"></div>
+            <div id="genres"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+</body>
+</html>

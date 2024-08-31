@@ -1,0 +1,159 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(12,12,12)
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#cont{
+    background-color: rgb(33, 32, 32);
+    border-radius: 10px;
+    width: 35%;
+}
+
+#enter{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    gap: 10px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+#something{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#spanning{
+    color: white;
+    margin-top: 7px;
+    margin-left: 12px;
+    position: fixed;
+    width: 5%
+}
+
+#submit{
+    background-color: #1ed760;
+    border: none;
+    padding:  10px;
+    color: black;
+    height: 40px;
+    line-height: 14px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: medium;
+}
+
+#submit:not(:hover){
+    background-color: #1ed760;
+    border: none;
+    padding:  10px;
+    color: black;
+    height: 40px;
+    line-height: 14px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: medium;
+    transition-duration: 0.2s;
+}
+
+#submit:hover{
+    transition:ease-in-out;
+    transition-duration: 0.2s;
+    background-color: #2eee71;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#input{
+    font-size:medium;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding-left: 16px;
+    outline: none;
+}
+
+#input:focus{
+    outline: none !important;
+    outline-width: 0; 
+    outline-color: white;
+}
+
+#followers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 12px;
+}
+
+#link{
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+#genres{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
