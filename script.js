@@ -7,7 +7,7 @@ async function getToken() {
 
         const date = await fetch('config.json')
         const date1 = await date.json();
-
+        console.log(date1)
         const clientID = date1.CLIENT_ID;
         const clientSecret = date1.CLIENT_SECRET;
 
@@ -19,7 +19,7 @@ async function getToken() {
             },
             body: 'grant_type=client_credentials'
         });
-
+        console.log(result)
         const data = await result.json();
         //console.log(data.access_token);
         return data.access_token;
