@@ -7,7 +7,6 @@ async function getToken() {
 
         const date = await fetch('config.json')
         const date1 = await date.json();
-        console.log(date1)
         const clientID = date1.CLIENT_ID;
         const clientSecret = date1.CLIENT_SECRET;
 
